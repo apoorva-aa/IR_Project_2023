@@ -1,17 +1,20 @@
 
 from flask import Flask, request, redirect, url_for
+# from ir_detoxification_v2 import main_function
+from simplifier import user_interface_function
 from flask_cors import CORS, cross_origin
 import time
 app = Flask(__name__)
 cors = CORS(app)
 
 def simplyfy(text):
-    time.sleep(5)
-    return text.upper()
+    toRet = user_interface_function(text)
+    return toRet
 
 def detoxify(text):
-    time.sleep(5)
-    return text.lower()
+    resultToReturn = main_function(text)
+    return resultToReturn
+    # return "Sdfa"
 
 @app.route('/')
 def home():
@@ -22,7 +25,7 @@ def hello_name(name):
    return 'Hello %s!' % name
  
 @app.route('/getResult', methods=['POST'])
-def login():
+def simplifyText():
     print('loll')
     if request.method == 'POST':
         print(request.json['textToSimplify'])
@@ -33,7 +36,7 @@ def login():
        return "Bad request"
 
 @app.route('/getDResult', methods=['POST'])
-def login2():
+def detoxifyText():
     print('loll')
     if request.method == 'POST':
          print(request.json['textToDetoxify'])
