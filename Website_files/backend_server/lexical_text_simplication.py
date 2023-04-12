@@ -93,5 +93,5 @@ def user_interface_function(text):
   return sentence
 
 #sample use case
-input_text = "Draconian laws made everybody miserable."
-simplified_text = user_interface_function(input_text)
+# input_text = "Draconian laws made everybody miserable."
+# simplified_text = user_interface_function(input_text)
