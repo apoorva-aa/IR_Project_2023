@@ -1,22 +1,20 @@
 
 from flask import Flask, request, redirect, url_for
 from ir_detoxification_v3 import main_function
-# from lexical_text_simplication import user_interface_function
+from lexical_text_simplication import user_interface_function
 from flask_cors import CORS, cross_origin
 import time
 app = Flask(__name__)
 cors = CORS(app)
 
 def simplyfy(text):
-    # toRet = user_interface_function(text)
-    toRet = "hi"
+    toRet = user_interface_function(text)
     return toRet
 
 def detoxify(text):
     resultToReturn = main_function(text)
     return resultToReturn
-    # return "Sdfa"
-    # return "Lol"
+
 
 @app.route('/')
 def home():
