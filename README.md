@@ -32,10 +32,11 @@ project_proposal.pdf - Contains the project proposal for the Information Retriev
 
 ## Lexical Text Simplification
 
-The proposed solution for lexical text simplification involves three main steps. 
+The proposed solution for lexical text simplification involves these main steps: 
 * Firstly, complex words in the sentence are identified using the difficult_words function from the textstat library. 
-* Secondly, the identified word is masked and replaced using the masked language modeling feature provided by BERT, and a list of the most appropriate words that can replace the masked word is generated. 
-* Finally, the most appropriate replacement word is chosen based on the cosine similarity between the original and modified sentence, and the sum of the Zipf frequency of all words in the original and modified sentence is calculated to compare their complexity.
+* Secondly, the identified word is masked and replaced using the masked language modeling feature provided by BERT, and a list of the most appropriate words that can replace the masked word is generated. Best 2 replacement words for each complex word are chosen using zipf frequency and similarity to original word.
+* Finally in case of multiple complex sentences in a word, all possible permutations of the list containing the best 2 replacement words for the complex words are considered. Sentences corresponding to these permutation are generated. Best sentence is chosen using zipf frequency and cosine similairty to original sentence.
+* If sentence contains less than 6 words then use simple synonym replacement as not enough context  
 
 ## Detoxification
 As part of our model, we developed a model that performs the following tasks: 
