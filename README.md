@@ -6,22 +6,22 @@ This is a project for the Information Retrieval course (CSE-508) offered at IIIT
 The directory structure for this repository is as follows:
 
 ### IR_Project_2023/
-> Baseline_Results_Folder/
->> Lexical_Text_Simplification.ipynb
->> Detoxification.ipynb
+1. Baseline_Results_Folder/
+  - Lexical_Text_Simplification.ipynb
+  - Detoxification.ipynb
 
-> Mid_project_Review/
->> Mid_Project_Report.pdf
->> Lexical_Text_Simplification.ipynb
->> Detoxification.ipynb
+2. Mid_project_Review/
+  - Mid_Project_Report.pdf
+  - Lexical_Text_Simplification.ipynb
+  - Detoxification.ipynb
 
-> Website_files/
+3. Website_files/
 
-> project_proposal.pdf
+4. Project_proposal.pdf
 
-> LICENSE
+5. LICENSE
 
-> README.md
+6. README.md
 
 * Baseline_Results_Folder/ - Contains two Jupyter Notebook files that demonstrate the baseline results for lexical text simplification and detoxification techniques.
 * Mid_project_Review/ - Contains a report for the mid-project evaluation along with two Jupyter Notebook files with updated codes for lexical text simplification and detoxification.
