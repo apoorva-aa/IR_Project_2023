@@ -1,7 +1,7 @@
 
 from flask import Flask, request, redirect, url_for
-from ir_detoxification_v3 import main_function
-from lexical_text_simplication import user_interface_function
+from detoxification_final import detoxification
+from lexical_text_simplication_final import user_interface_function
 from flask_cors import CORS, cross_origin
 import time
 app = Flask(__name__)
@@ -12,7 +12,7 @@ def simplyfy(text):
     return toRet
 
 def detoxify(text):
-    resultToReturn = main_function(text)
+    resultToReturn = detoxification(text)
     return resultToReturn
 
 
