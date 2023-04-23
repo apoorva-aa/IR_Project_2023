@@ -7,13 +7,13 @@ The directory structure for this repository is as follows:
 
 ### IR_Project_2023/
 1. Baseline_Results_Folder/
-  - Lexical_Text_Simplification.ipynb
-  - Detoxification.ipynb
+    - Lexical_Text_Simplification.ipynb
+    - Detoxification.ipynb
 
 2. Mid_project_Review/
-  - Mid_Project_Report.pdf
-  - Lexical_Text_Simplification.ipynb
-  - Detoxification.ipynb
+    - Mid_Project_Report.pdf
+    - Lexical_Text_Simplification.ipynb
+    - Detoxification.ipynb
 
 3. Website_files/
 
