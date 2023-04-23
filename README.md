@@ -47,3 +47,12 @@ As part of our model, we developed a model that performs the following tasks:
 
 ## Instructions
 Clone the repository using the following command: git clone https://github.com/apoorva-aa/IR_Project_2023.git
+
+## Contributors 
+- Aanya Trehan (2020419)
+- Abhimanyu Bhatnagar (2020273) 
+- Aniket Goel (2020281)
+- Apoorva Arya (2020032)   
+- Naman Kaushik (2020088)
+- Sejal Kardam (2020467)
+            	            
